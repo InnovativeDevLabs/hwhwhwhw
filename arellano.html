@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arellano University Login</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-image: url('arellano.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: red;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background-color: red;
+  color: white;
+  padding: 20px;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.form-container {
+  background-color: turquoise;
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a1 {
+  color:red;
+  
+}
+h1{
+  font-size: 50px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo1.jpg" alt="Arellano University Logo 1">  
+    <h1>ARELLANO UNIVERSITY</h1>
+    <img src="logo3.jpg" alt="Arellano University Logo 2">  
+  </div>
+  <div class="form-container">
+    <form id="loginForm">
+      <input type="text" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="checkbox" id="rememberMe">
+      <label for="rememberMe">Remember Me</label><br>
+      <input type="text" id="pcNumber" placeholder="Pc Number">
+      <button type="button" onclick="validateForm()">LOG IN</button>
+      <a1 href="university.html"> Register</a><br>
+      <a href="#">Forgot Password?</a>
+    </form>
+  </div>
+  <script>
+    
+    alert(" welcome to arellano university ");
+    
+    alert(" please login now");
+    function validateForm() {
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      if (email === "" || password === "") {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      alert("Submitting form: Email: " + email + ", Password: " + password);
+    }
+  </script>
+</div>
+</body>
+</html>
