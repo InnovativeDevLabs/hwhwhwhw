@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICT Lab System</title>
+<style>
+body {
+  font-family: sans-serif;
+  display: flex; 
+  background-color: red;
+}
+
+.left-panel {
+  width: 30%;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.right-panel {
+  width: 70%;
+  background-color: red;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.student-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  color:black ;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <div class="left-panel">
+    <img src="Tr.jpg" alt="Teacher Profile" class="profile-image">
+    <p>TEACHER: ADMIN</p>
+    <img src="logo1.jpg" alt="Logo 1" width="100">
+    <img src="logo3.jpg" alt="Logo 2" width="100">
+    <button>Help</button>
+    <button>Log Out</button>
+  </div>
+
+  <div class="right-panel">
+    <h1><i>ICT-LAB</i></h1>
+    <div>
+      <img src="Ss.jpg" alt="Student Icon" width="50">
+      <p> Name: </p>
+      <p> Section:</p>
+      <p>Name: <input type="text" id="studentName"></p>
+      <p>Section: <input type="text" id="studentSection"></p>
+    </div>
+    <button class="student-button" onclick="showStudent('Ramon Dave Altura')">STUDENT: RAMON DAVE ALTURA</button>
+    <button class="student-button" onclick="showStudent('Manny Pacquiao')">STUDENT: MANNY PACQUIAO</button>
+    
+  </div>
+
+  <script>
+  function showStudent(studentName) {
+    document.getElementById('studentName').value = studentName;
+  }
+  </script>
+</body>
+</html>
